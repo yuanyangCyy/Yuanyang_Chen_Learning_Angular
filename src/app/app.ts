@@ -7,6 +7,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('yuanyang-chen-learning-angular');
+export class AppComponent {
+  title = 'yuanyang-chen-learning-angular';
+
+  studentName: string = 'Yuanyang Chen';
+  age: number = 27;
 }
