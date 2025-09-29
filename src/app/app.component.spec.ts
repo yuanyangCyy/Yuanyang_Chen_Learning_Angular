@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app';
+import { AppComponent } from './app.component';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -18,6 +18,8 @@ describe('App', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, yuanyang-chen-learning-angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, yuanyang-chen-learning-angular'
+    );
   });
 });
