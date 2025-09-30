@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
 import type { Movie } from './Shared/Models/movie';
+import {MovieList} from './movie-list/movie-list';
 
 @Component({
   selector: 'app-root',
   standalone: true,
 
   templateUrl: './app.component.html',
+  imports: [
+    MovieList
+  ],
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {

@@ -1,0 +1,8 @@
+<p>movie-list works!</p>
+<div class="container">
+  <h2>Movie List</h2>
+
+  @for (m of movies; track m.id) {
+    <app-movie-list-item [movie]="m"></app-movie-list-item>
+  }
+</div>
