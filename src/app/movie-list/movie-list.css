@@ -1,0 +1,15 @@
+.odd-row {
+  background-color: #e0f7f7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.even-row {
+  background-color: #ffe6f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 20px;
+}

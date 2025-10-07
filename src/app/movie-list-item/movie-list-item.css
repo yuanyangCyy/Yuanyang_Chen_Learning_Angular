@@ -5,6 +5,11 @@
 }
 
 
-h3{
-  color: pink;
+:host-context(app-movie-list) app-movie-list-item:nth-child(odd) .movie-item {
+  background-color: #e0f7f7;
+}
+
+
+:host-context(app-movie-list) app-movie-list-item:nth-child(even) .movie-item {
+  background-color: #ffe6f0;
 }

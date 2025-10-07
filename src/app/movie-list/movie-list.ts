@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Movie } from '../Shared/Models/movie';
 import { MovieListItem } from '../movie-list-item/movie-list-item';
 import { MovieService } from '../Services/movie.service';
@@ -6,12 +7,12 @@ import { MovieService } from '../Services/movie.service';
 @Component({
   selector: 'app-movie-list',
   standalone: true,
-  imports: [MovieListItem],
+  imports: [CommonModule, MovieListItem],
   templateUrl: './movie-list.html',
   styleUrls: ['./movie-list.css']
 })
 export class MovieList implements OnInit {
-  movies: Movie[] = [];
+  movies: Movie[] = []; // will hold all movies
 
   constructor(private movieService: MovieService) {}
 
