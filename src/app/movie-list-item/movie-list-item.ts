@@ -3,7 +3,8 @@ import {Movie} from '../Shared/Models/movie';
 
 @Component({
   selector: 'app-movie-list-item',
-  imports: [],
+  standalone: true,
+
   templateUrl: './movie-list-item.html',
   styleUrl: './movie-list-item.css'
 })
