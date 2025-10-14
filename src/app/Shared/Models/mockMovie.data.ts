@@ -8,7 +8,7 @@ export const movieList: Movie[] = [
     director: 'Chen Kaige',
     year: 2021,
     inTheaters: false,
-    image: 'assets/images/lakechangjin.jpeg'
+    image: '../assets/lackechangjin.jpeg'
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const movieList: Movie[] = [
     director: 'Christopher Nolan',
     year: 2010,
     inTheaters: false,
-    image: 'assets/images/inception.jpeg'
+    image: '../assets/inception.jpeg'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const movieList: Movie[] = [
     director: 'Bong Joon-ho',
     year: 2019,
     inTheaters: false,
-    image: 'assets/images/parasite.jpeg'
+    image: 'assets/parasite.jpeg'
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const movieList: Movie[] = [
     director: 'James Cameron',
     year: 2022,
     inTheaters: true,
-    image: 'assets/images/avatar2.jpeg'
+    image: 'assets/avatar2.jpeg'
   },
   {
     id: 5,
@@ -40,6 +40,6 @@ export const movieList: Movie[] = [
     director: 'Christopher Nolan',
     year: 2014,
     inTheaters: false,
-    image: 'assets/images/interstellar.jpeg'
+    image: 'assets/interstellar.jpeg'
   }
 ];
