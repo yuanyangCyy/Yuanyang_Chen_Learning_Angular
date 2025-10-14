@@ -1,16 +1,13 @@
+<!-- Future Nav bar -->
+<div class="nav-bar">
+  <nav>
+    <a routerLink="/movies" routerLinkActive="active">Movie List</a >
+    <a routerLink="/modify" routerLinkActive="active">Modify Movie</a >
+  </nav>
+</div>
+
 <div class="app-container">
   <h1>{{ title }}</h1>
-
-  <h2>Featured Movie</h2>
-
-  <div *ngIf="featuredMovie as fm">
-    <h3>{{ fm.title }} ({{ fm.year }})</h3>
-    <p>Director: {{ fm.director }}</p>
-    <p>In Theaters: {{ fm.inTheaters ? 'Yes' : 'No' }}</p>
-  </div>
-
-  <hr>
-
-  <h2>All Movies</h2>
-  <app-movie-list></app-movie-list>
+  <!-- router outlet to display routed components -->
+  <router-outlet></router-outlet>
 </div>
