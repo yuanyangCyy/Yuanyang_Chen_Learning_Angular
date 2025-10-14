@@ -1,5 +1,8 @@
 <div class="movie-item">
-  <h3>{{ movie.title }} ({{ movie.year }})</h3>
-  <p>Director: {{ movie.director }}</p>
-  <p>In Theaters: {{ movie.inTheaters ? 'Yes' : 'No' }}</p>
+  <img [src]="movie.image" alt="{{ movie.title }}" class="poster">
+  <div class="details">
+    <h3>{{ movie.title }} ({{ movie.year }})</h3>
+    <p>Director: {{ movie.director }}</p>
+    <p>In Theaters: {{ movie.inTheaters ? 'Yes' : 'No' }}</p>
+  </div>
 </div>

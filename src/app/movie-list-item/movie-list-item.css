@@ -1,15 +1,21 @@
 .movie-item {
-  border: 2px solid black;
-  padding: 10px;
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
 }
 
-
-:host-context(app-movie-list) app-movie-list-item:nth-child(odd) .movie-item {
-  background-color: #e0f7f7;
+.poster {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 16px;
 }
 
-
-:host-context(app-movie-list) app-movie-list-item:nth-child(even) .movie-item {
-  background-color: #ffe6f0;
+.details h3 {
+  margin: 0;
+  color: #333;
 }

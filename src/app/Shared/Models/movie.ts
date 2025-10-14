@@ -5,4 +5,5 @@ export interface Movie{
   year: number;
   rating?: number;
   inTheaters: boolean;
+  image: string;
 }
