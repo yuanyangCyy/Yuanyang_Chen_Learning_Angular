@@ -4,5 +4,9 @@
     <h3>{{ movie.title }} ({{ movie.year }})</h3>
     <p>Director: {{ movie.director }}</p>
     <p>In Theaters: {{ movie.inTheaters ? 'Yes' : 'No' }}</p>
+
+    <button (click)="onEdit()">Edit</button>
+    <button (click)="onDelete()">Delete</button>
+
   </div>
 </div>
