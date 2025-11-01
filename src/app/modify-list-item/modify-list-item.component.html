@@ -1,5 +1,19 @@
-<div class="modify-container">
-  <h2>{{ message }}</h2>
-  <p>Here you can edit or update your movie details.</p >
-  <button>Edit Movie</button>
-</div>
+<h2>Movie Form</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>ID:</label>
+  <input type="number" formControlName="id"><br>
+
+  <label>Title:</label>
+  <input type="text" formControlName="title"><br>
+
+  <label>Genre:</label>
+  <input type="text" formControlName="genre"><br>
+
+  <label>Year:</label>
+  <input type="text" formControlName="year"><br>
+
+
+  <<button type="submit">Save Movie</button>
+
+</form>

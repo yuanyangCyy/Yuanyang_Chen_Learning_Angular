@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Movie } from '../Shared/Models/movie';
-import { MovieListItem } from '../movie-list-item/movie-list-item';
+
 import { MovieService } from '../Services/movie.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-movie-list',
   standalone: true,
-  imports: [CommonModule, MovieListItem],
+  imports: [CommonModule],
   templateUrl: './movie-list.html',
   styleUrls: ['./movie-list.css']
 })
