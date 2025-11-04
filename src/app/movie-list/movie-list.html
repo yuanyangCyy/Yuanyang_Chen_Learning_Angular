@@ -1,4 +1,6 @@
 <h2>Movie List</h2>
+
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 <div *ngFor="let m of movies">
   <p>{{ m.id }} - {{ m.title }} ({{ m.year }})</p>
   <button (click)="editMovie(m.id)">Edit</button>

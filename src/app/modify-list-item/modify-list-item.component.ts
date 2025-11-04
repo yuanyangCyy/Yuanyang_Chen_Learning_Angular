@@ -45,19 +45,29 @@ export class ModifyListItemComponent implements OnInit {
   onSubmit(): void {
     if (this.form.valid) {
       const movie: Movie = this.form.value;
-      const existing = this.movieService['movies'].find(m => m.id === movie.id);
 
-      if (existing) {
-        this.movieService.updateMovie(movie).subscribe(() => {
-          alert('Movie updated successfully!');
-          this.router.navigate(['/movies']);
-        });
-      } else {
-        this.movieService.addMovie(movie).subscribe(() => {
-          alert('Movie added successfully!');
-          this.router.navigate(['/movies']);
-        });
-      }
+      this.movieService.getMovies().subscribe({
+        next: (movies: Movie[]) => {
+          const existing = movies.find((m: Movie) => m.id === movie.id);
+          if (existing) {
+            this.movieService.updateMovie(movie).subscribe(() => {
+              alert('Movie updated successfully!');
+              this.router.navigate(['/movies']);
+              this.form.reset();
+            });
+          } else {
+            this.movieService.addMovie(movie).subscribe(() => {
+              alert('Movie added successfully!');
+              this.router.navigate(['/movies']);
+              this.form.reset();
+            });
+          }
+        },
+        error: (err) => {
+          console.error('Error loading movie list:', err);
+          alert('Error loading movie list');
+        }
+      });
     }
   }
 }
