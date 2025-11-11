@@ -6,4 +6,7 @@ export interface Movie{
   rating?: number;
   inTheaters: boolean;
   image: string;
+  releaseDate?: string;
+  price?: number;
+
 }

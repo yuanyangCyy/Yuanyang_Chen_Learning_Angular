@@ -7,7 +7,7 @@ import { Movie } from '../Shared/Models/movie';
   providedIn: 'root'
 })
 export class MovieService {
-  private apiUrl = 'api/movies'; // in-memory API endpoint
+  private apiUrl = 'api/movies';
 
   constructor(private http: HttpClient) {}
 

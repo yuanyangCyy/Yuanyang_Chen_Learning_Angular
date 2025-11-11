@@ -24,7 +24,7 @@ export const movieList: Movie[] = [
     director: 'Bong Joon-ho',
     year: 2019,
     inTheaters: false,
-    image: 'assets/parasite.jpeg'
+    image: '../assets/parasite.jpeg'
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const movieList: Movie[] = [
     director: 'James Cameron',
     year: 2022,
     inTheaters: true,
-    image: 'assets/avatar2.jpeg'
+    image: '../assets/avatar2.jpeg'
   },
   {
     id: 5,
@@ -40,6 +40,6 @@ export const movieList: Movie[] = [
     director: 'Christopher Nolan',
     year: 2014,
     inTheaters: false,
-    image: 'assets/interstellar.jpeg'
+    image: '../assets/interstellar.jpeg'
   }
 ];

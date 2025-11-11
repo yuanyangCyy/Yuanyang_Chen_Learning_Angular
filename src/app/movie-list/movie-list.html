@@ -1,8 +1,23 @@
 <h2>Movie List</h2>
 
-<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 <div *ngFor="let m of movies">
-  <p>{{ m.id }} - {{ m.title }} ({{ m.year }})</p>
+  <!-- UpperCasePipe -->
+  <h3>{{ m.title | uppercase }}</h3>
+
+  <!-- DatePipe -->
+  <p>Release Date: {{ m.releaseDate | date:'longDate' }}</p>
+
+  <!-- CurrencyPipe -->
+  <p>Ticket Price: {{ m.price | currency:'USD':'symbol' }}</p>
+
+  <p>Director: {{ m.director | uppercase }}</p>
+  <p>Rating: {{ m.rating }}</p>
+  <p>Year: {{ m.year }}</p>
+
+  <img [src]="m.image" alt="{{ m.title }}" width="100" />
+
+  <br />
   <button (click)="editMovie(m.id)">Edit</button>
   <button (click)="deleteMovie(m.id)">Delete</button>
+  <hr />
 </div>
