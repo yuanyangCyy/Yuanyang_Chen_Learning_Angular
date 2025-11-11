@@ -2,7 +2,7 @@
 
 <div *ngFor="let m of movies">
   <!-- UpperCasePipe -->
-  <h3>{{ m.title | uppercase }}</h3>
+  <h3>{{ m | movieInfo }}</h3>
 
   <!-- DatePipe -->
   <p>Release Date: {{ m.releaseDate | date:'longDate' }}</p>

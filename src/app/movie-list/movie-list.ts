@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Movie } from '../Shared/Models/movie';
 import { MovieService } from '../Services/movie.service';
 import { Router } from '@angular/router';
+import {MovieInfoPipe} from '../pipes/movie-info.pipe';
 
 @Component({
   selector: 'app-movie-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MovieInfoPipe],
   templateUrl: './movie-list.html',
   styleUrls: ['./movie-list.css']
 })
